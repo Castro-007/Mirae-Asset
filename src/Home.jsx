@@ -21,7 +21,7 @@ const Home = () => {
         setLoading(true)
         setTimeout(() => {
             setLoading(false)
-        }, 3000)
+        }, 5000)
     },[])
 
 
@@ -30,6 +30,8 @@ const Home = () => {
     <>
         {
             loading ? 
+            <div className='flex items-center justify-center h-screen'>
+
                   <Audio
                       height="80"
                       width="80"
@@ -39,6 +41,7 @@ const Home = () => {
                       wrapperStyle
                       wrapperClass
                       />
+                      </div>
                    :
         
         <div>
@@ -189,7 +192,7 @@ const Home = () => {
             </div>
         </div>
         <div className='bg-[#ECEFF1] py-12'>
-            <div className='flex sma:flex-col mda:flex-col sma:gap-4 mda:gap-4 justify-around lg:items-start'>
+            <div className='flex sma:flex-col mda:flex-col sma:gap-4 mda:gap-4 justify-around sma:pl-4 mda:pl-4 lg:items-start'>
                 <div className='w-[350px]'>
                     <div className='flex justify-between'>
                     <h1 className='text-2xl font-Dmsans font-medium'>지금 살펴봐야할 이벤트</h1>
@@ -219,20 +222,20 @@ const Home = () => {
         <div className='bg-[#242424]'>
             <div className='flex justify-center gap-4 items-center py-12'>
                 <div className='items-end self-end scale-x-[-1]'>
-                    <div className='w-32 mb-1 h-0.5 rounded-s-xl bg-slate-600 '></div>
-                    <div className='w-36 mb-1 h-0.5 bg-slate-600'></div>
-                    <div className='w-40 mb-1 h-0.5 bg-slate-600'></div>
-                    <div className='w-44 mb-1 h-0.5 bg-slate-600'></div>
+                    <div className='w-32 sma:w-16 mda:w-16 mb-1 h-0.5 rounded-s-xl bg-slate-600 '></div>
+                    <div className='w-36 sma:w-20 mda:w-20 mb-1 h-0.5 bg-slate-600'></div>
+                    <div className='w-40 sma:w-24 mda:w-24 mb-1 h-0.5 bg-slate-600'></div>
+                    <div className='w-44 sma:w-28 mda:w-28 mb-1 h-0.5 bg-slate-600'></div>
                 </div>
                 <div>
                 <h1 className='text-4xl font-Dmsans pb-1 font-medium text-white text-center tracking-wide'>CENTER <sup>1</sup></h1>
                 <h3 className='text-2xl font-Dmsans font-medium text-white tracking-wide'>미래에셋센터원 <span className='text-[#F58220]'>AVENUE</span></h3>
                 </div>
                 <div className='items-end self-end scale-x-[1]'>
-                    <div className='w-32 mb-1 h-0.5 bg-slate-600'></div>
-                    <div className='w-36 mb-1 h-0.5 bg-slate-600'></div>
-                    <div className='w-40 mb-1 h-0.5 bg-slate-600'></div>
-                    <div className='w-44 mb-1 h-0.5 bg-slate-600'></div>
+                    <div className='w-32 sma:w-16 mda:w-16 mb-1 h-0.5 bg-slate-600'></div>
+                    <div className='w-36 sma:w-20 mda:w-20 mb-1 h-0.5 bg-slate-600'></div>
+                    <div className='w-40 sma:w-24 mda:w-24 sma mb-1 h-0.5 bg-slate-600'></div>
+                    <div className='w-44 sma:w-28 mda:w-28 mb-1 h-0.5 bg-slate-600'></div>
                 </div>
             </div>
             <div className=''>
